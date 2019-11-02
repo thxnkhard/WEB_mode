@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>WEB</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1><a href="index.html" class="mode">WEB</a></h1>
+  <div id="grid">
+    <div id="buttons">
+      <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor='#001234';
+        document.querySelector('body').style.color='white';
+        var mode =
+        document.querySelectorAll('.mode');
+        for (var i = 0; i < mode.length; i++) {
+          mode[i].style.color = 'white';
+        }
+      ">
+      <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        var mode =
+        document.querySelectorAll('.mode');
+        for (var i = 0; i < mode.length; i++) {
+          mode[i].style.color = 'black';
+        }
+      ">
+    </div>
+    <ol>
+      <li><a href="1_html.html" class="mode">HTML</a></li><br>
+      <li><a href="2_CSS.html" class="mode">CSS</a></li><br>
+      <li><a href="3_javascript.html" class="mode">JavaScript</a></li><br>
+    </ol>
+    <div id="article">
+      <h2>WHAT IS <a href="https://en.wikipedia.org/wiki/Website" target="_blank" title="WEB" class="link mode"> WEB</a>?</h2>
+      <div>
+        <p>
+          Definition - What does Web mean?
+          The Web is the common name for the World Wide Web,
+          a subset of the Internet consisting of the pages
+          that can be accessed by a Web browser.
+          Many people assume that the Web is the same as the Internet,
+          and use these terms interchangeably.
+          However, the term Internet actually refers to the global network of servers
+          that makes the information sharing that happens over the Web possible.
+          So, although the Web does make up a large portion of the Internet,
+          but they are not one and same.
+        </p>
+        <p>
+          WEB is a computer programming system created by Donald E. Knuth
+          as the first implementation of what he called "literate programming":
+          the idea that one could create software as works of literature,
+          by embedding source code inside descriptive text, rather than the reverse
+          (as is common practice in most programming languages),
+          in an order that is convenient for exposition to human readers,
+          rather than in the order demanded by the compiler.
+
+          WEB consists of two secondary programs: TANGLE,
+          which produces compilable Pascal code from the source texts,
+          and WEAVE, which produces nicely-formatted, printable documentation using TeX.
+
+          CWEB is a version of WEB for the C programming language,
+          while noweb is a separate literate programming tool,
+          which is inspired by WEB (as reflected in the name)
+          and which is language agnostic.
+
+          The most significant programs written in WEB are TeX and Metafont.
+          Modern TeX distributions use another program Web2C to convert WEB source to C.
+        </p>
+      </div>
+      <div class="img">
+        <img src="img_index_web.jpg" width="500px">
+        <div>WEB</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

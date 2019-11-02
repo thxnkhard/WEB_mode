@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>WEB-CSS란?</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1><a href="index.html" class="mode">WEB</a></h1>
+  <div id="grid">
+    <div id="buttons">
+      <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor='#001234';
+        document.querySelector('body').style.color='white';
+        var mode =
+        document.querySelectorAll('.mode');
+        for (var i = 0; i < mode.length; i++) {
+          mode[i].style.color = 'white';
+        }
+      ">
+      <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        var mode =
+        document.querySelectorAll('.mode');
+        for (var i = 0; i < mode.length; i++) {
+          mode[i].style.color = 'black';
+        }
+      ">
+    </div>
+    <ol>
+      <li><a href="1_html.html" class="mode">HTML</a></li><br>
+      <li><a href="2_CSS.html" class="mode">CSS</a></li><br>
+      <li><a href="3_javascript.html" class="mode">JavaScript</a></li><br>
+    </ol>
+    <div id="article">
+      <h2>WHAT IS <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank" title="CSS" class="link mode"> CSS</a>?</h2>
+      <div>
+        <p>
+          Cascading Style Sheets (CSS) is a style sheet language
+          used for describing the presentation of a document
+          written in a markup language like HTML.<a href="#ref1" class="remark">[1]</a>
+          CSS is a cornerstone technology of the World Wide Web,
+          alongside HTML and JavaScript.<a href="#ref2" class="remark">[2]</a>
+
+          CSS is designed to enable the separation of presentation and content,
+          including layout, colors, and fonts.<a href="#ref3" class="remark">[3]</a>
+          This separation can improve content accessibility,
+          provide more flexibility and control in the specification of presentation
+          characteristics, enable multiple web pages to share formatting
+          by specifying the relevant CSS in a separate .css file,
+          and reduce complexity and repetition in the structural content.
+
+          Separation of formatting and content also makes it feasible
+          to present the same markup page in different styles for different
+          rendering methods, such as on-screen, in print, by voice
+          (via speech-based browser or screen reader),
+          and on Braille-based tactile devices. CSS also has rules
+          for alternate formatting if the content is accessed on a mobile device.<a href="#ref4" class="remark">[4]</a>
+
+          The name cascading comes from the specified priority scheme
+          to determine which style rule applies if more than one rule matches
+          a particular element. This cascading priority scheme is predictable.
+
+          The CSS specifications are maintained by the World Wide Web Consortium (W3C).
+          Internet media type (MIME type) text/css is registered
+          for use with CSS by RFC 2318 (March 1998).
+          The W3C operates a free CSS validation service for CSS documents.<a href="#ref5" class="remark">[5]</a>
+
+          In addition to HTML, other markup languages support the use of CSS
+          including XHTML, plain XML, SVG, and XUL.
+        </p>
+      </div>
+      <div class="img">
+        <img src="img_2_css.jpg" width="500px">
+        <div>CSS CODE</div>
+      </div>
+    </div>
+  </div>
+  <div class="remark_list">
+    <ol>
+      <li><a id="ref1">"CSS developer guide". Mozilla Developer Network. Retrieved 2015-09-24.</li>
+      <li><a id="ref2">Flanagan, David. JavaScript - The definitive guide (6 ed.). p. 1.
+          <q>JavaScript is part of the triad of technologies that all Web developers must learn : HTML to specify the content of web pages, CSS to specify the presentation of web pages, and JavaScript to specify the behaviour of web pages.</q></li>
+      <li><a id="ref3">"What is CSS?". World Wide Web Consortium. Retrieved 2010-12-01.</a></li>
+      <li><a id="ref4">"Web-based Mobile Apps of the Future Using HTML 5, CSS and JavaScript". HTMLGoodies.</a></li>
+      <li><a id="ref5">"W3C CSS validation service".</a></li>
+    </ol>
+  </div>
+</body>
+
+</html>

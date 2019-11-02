@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: serif;
+  margin-bottom: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.link {
+  border: 1px solid gray;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  font-family: normal;
+  border-bottom: 1px solid gray;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  font-family: normal;
+  margin-top: 30px;
+}
+
+#grid {
+  display: grid;
+  grid-template-areas:
+    'buttons  main'
+    'menu main';
+  grid-template-rows: 30px 1fr;
+}
+
+#grid #buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-area: buttons;
+  height: 30px;
+  border-right: 1px solid gray;
+}
+
+#grid ol {
+  grid-area: menu;
+  border-top: 1px solid gray;
+  padding-left: 40px;
+  padding-top: 30px;
+  font-family: normal;
+  border-right: 1px solid gray;
+  width: 100px;
+  margin: 0;
+}
+
+#grid #article {
+  grid-area: main;
+  padding-left: 40px;
+}
+
+.remark {
+  font-size: 12px;
+  color: blue;
+}
+
+img {
+  margin-top: 50px;
+}
+
+.img {
+  font-size: 12px;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: center;
+  color: gray;
+}
+
+.remark_list {
+  margin-top: 200px;
+}
+
+@media(max-width:700px) {
+  #grid {
+    display: block;
+  }
+
+  #grid #buttons {
+    display: none;
+  }
+
+  #grid ol {
+    border-top: none;
+    border-right: none;
+  }
+
+  #article {
+    border-top: 1px solid gray;
+    padding-top: 20px;
+  }
+}
